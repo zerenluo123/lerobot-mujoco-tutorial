@@ -1,6 +1,8 @@
 dataset:
-  repo_id: omy_pnp_language # Repository ID
-  root: ./demo_data_language # Your root for data file!
+#  repo_id: omy_pnp_language # Repository ID
+#  root: ./demo_data_language # Your root for data file!
+  repo_id: null # Repository ID
+  root: ./omy_pnp_language # Your root for data file!
 policy:
   type : smolvla
   chunk_size: 5
@@ -22,7 +24,7 @@ save_freq: 10_000
 use_policy_training_preset: true
   
 wandb:
-  enable: true
+  enable: false
   project: smolvla_omy
   entity: <your_wandb_entity>
   disable_artifact: true
